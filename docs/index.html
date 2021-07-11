@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm a web developer specialized in front-end developpement.">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./images/logoportfolio.svg" type="image/x-icon">
+    <script defer src="./js/app.js"></script>
+    <title>Suleyman | Portfolio</title>
+</head>
+<body>
+    <div id="overlay"></div>
+    <header id="home">
+        <h2 class="small">Suleyman</h2>
+        <button type="button" class="toggle">
+            <img src="./images/icon-toggle.svg" alt="toggle button">
+        </button>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#work">Projects</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            My name is <strong>Suleyman</strong>,
+            <br>
+            I'm a <strong>web dev</strong>.
+        </h1>
+        <p>
+            I'm a french student <b>passionated</b> in web developpement.
+            <br>
+            My main activity is <b>converting mockups</b> from Figma into HTML web page using <b>SCSS</b> and <b>Native Javascript</b>.
+        </p>
+        <a href="#work">See my work</a>
+    </main>
+    <section id="about">
+        <h2 class="big"><strong>About</strong> me</h2>
+        <ul id="list-of-about">
+            <li>
+                <h4><span></span> What am I currently doing ?</h4>
+                <p>
+                    As I said, I'm a french student, who lives near Paris. I'm studying engineering sciences.
+                    <br>
+                    But on my side, in my free time, I create websites to develop my skills and be useful for society.
+                    <br>
+                    I develop my skills on Udemy. An online website which offers courses from different tutor.                 
+                </p>
+            </li>
+            <li>
+                <h4><span></span> What tools am I using ?</h4>
+                <p>
+                    I use native Javascript for scripting.
+                    <br>
+                    Most of the time, I use ES6 class, localStorage, IntersectionObserver API for scroll event and Async/Await for fetching data.
+                    <br>
+                    I use SCSS for styling because it's more convenient.
+                    <br>
+                    With SCSS I can create reusable components for multi page website
+                    <br>
+                </p>
+            </li>
+            <li>
+                <h4><span></span> What am I looking for right now ?</h4>
+                <p>
+                    I want to learn the basics of backend development with NodeJS
+                    <br>
+                    And I want to learn a Javascript framework, like VueJS or ReactJS.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section id="work">
+        <h2 class="big">Projects coded with <strong>hard-working</strong></h2>
+        <ul id="list-of-projects">
+            <li>
+                <h3><strong>01.</strong> Where in the world? | A country API project</h3>
+                <div class="li-content">
+                    <ul>
+                        <h5>What I learned:</h5>
+                        <li>produce a clean JS file with ES6 class</li>
+                        <li>dark/light mode</li>
+                        <li>fetch data with async/await, and manipulate data</li>
+                        <li>optimize the scroll with IntersectionObserver API</li>
+                    </ul>
+                    <picture>
+                        <!-- <source media="(min-width: 1200px)" srcset="">
+                            <source media="(min-width: 750px)" srcset=""> -->
+                        <img src="./images/mobile-country.png" alt="Country Api project image">
+                    </picture>
+                    <div class="mask"></div>
+                </div>
+                <nav>
+                    <a href="https://suleeyman.github.io/FM-8-CountryAPI/" target="_blank">
+                        Live website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="var(--primary-bg-color)" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity="1"/></svg>
+                    </a>
+                    <a href="https://github.com/Suleeyman/FM-8-CountryAPI" target="_blank">
+                        See the code
+                        <svg height="16" viewBox="0 0 16 16" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    </a>
+                </nav>
+            </li>
+            <li>
+                <h3><strong>02.</strong> myteam Website | 3 Pages website</h3>
+                <div class="li-content">
+                    <ul>
+                        <h5>What I learned:</h5>
+                        <li>Organize SCSS components</li>
+                        <li>Create a responsive website</li>
+                        <li>Implement a contact us form</li>
+                    </ul>
+                    <picture>
+                        <img src="./images/myteam-mobile.png" alt="">
+                    </picture>
+                    <div class="mask"></div>
+                </div>
+                <nav>
+                    <a href="https://suleeyman.github.io/FM-9-MultiPageWebsite/" target="_blank">
+                        Live website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="var(--primary-bg-color)" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity="1"/></svg>
+                    </a>
+                    <a href="https://github.com/Suleeyman/FM-9-MultiPageWebsite" target="_blank">
+                        See the code
+                        <svg height="16" viewBox="0 0 16 16" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    </a>
+                </nav>
+            </li>
+            <li>
+                <h3><strong>03.</strong> Planets website | Single page website</h3>
+                <div class="li-content">
+                    <ul>
+                        <h5>What I learned:</h5>
+                        <li>React on the DOM according the planet</li>
+                        <li>Use the localStorage to keep the navigation active</li>
+                        <li>Create a responsive single page website</li>
+                    </ul>
+                    <picture>
+                        <img src="./images/mobile-earth.png" alt="">
+                    </picture>
+                    <div class="mask"></div>
+                </div>
+                <nav>
+                    <a href="https://suleeyman.github.io/FM-9-PlanetSite/" target="_blank">
+                        Live website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="var(--primary-bg-color)" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity="1"/></svg>
+                    </a>
+                    <a href="https://github.com/Suleeyman/FM-9-PlanetSite" target="_blank">
+                        See the code
+                        <svg height="16" viewBox="0 0 16 16" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    </a>
+                </nav>
+            </li>
+            <li>
+                <h3><strong>04.</strong> Todo App </h3>
+                <div class="li-content">
+                    <ul>
+                        <h5>What I learned:</h5>
+                        <li>React on the DOM according the dark/light mode</li>
+                        <li>Use the localStorage to keep todos</li>
+                        <li>Sort todos according to their states</li>
+                    </ul>
+                    <picture>
+                        <img src="./images/mobile-todoapp.png" alt="">
+                    </picture>
+                    <div class="mask"></div>
+                </div>
+                <nav>
+                    <a href="https://github.com/Suleeyman/FM-11-TodoApp" target="_blank">
+                        Live website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="var(--primary-bg-color)" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity="1"/></svg>
+                    </a>
+                    <a href="https://suleeyman.github.io/FM-11-TodoApp/" target="_blank">
+                        See the code
+                        <svg height="16" viewBox="0 0 16 16" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    </a>
+                </nav>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <h2 class="small">Suleyman</h2>
+        <p>
+            Contact :
+            <br>
+            <u>ozturksuleyman.dev@outlook.fr</u>
+        </p>
+        <nav>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#work">projects</a>
+            <a href="https://github.com/Suleeyman"><svg height="16" viewBox="0 0 16 16" width="16" aria-hidden="true"><path fill="white" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+        </nav>
+    </footer>
+</body>
+</html>
