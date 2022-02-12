@@ -8,10 +8,7 @@
 
 This repository is my online personnel portfolio.
 
-# Screenshot
-
-![](./screenshot.png)
-
 # Link
 
 - Live Site URL: [Github Page](https://suleeyman.github.io/Portfolio/)
+- My profile: [LinkedIN](https://www.linkedin.com/in/yavuz-ozturk-7a532622b/)
