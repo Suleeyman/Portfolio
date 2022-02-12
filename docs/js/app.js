@@ -4,6 +4,7 @@ const overlay = document.querySelector('#overlay')
 class App {
     constructor() {
         header.addEventListener('click', this._mobileToggle)
+        // console.log(navigator.language);
     }
 
     _mobileToggle(e) {
