@@ -11,4 +11,4 @@ This repository is my online personnel portfolio.
 # Link
 
 - Live Site URL: [Github Page](https://suleeyman.github.io/Portfolio/)
-- My profile: [LinkedIN](https://www.linkedin.com/in/yavuz-ozturk-7a532622b/)
+- My profil: [LinkedIN](https://www.linkedin.com/in/yavuz-ozturk-7a532622b/)
