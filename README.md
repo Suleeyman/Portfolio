@@ -10,7 +10,7 @@ This repository is my online personnel portfolio.
 
 # Screenshot
 
-[Mon portfolio](screenshot.png)
+![Mon portfolio](screenshot.png)
 
 # Link
 
