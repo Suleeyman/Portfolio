@@ -1,0 +1,161 @@
+@use "./abstract/" as *;
+@use "./component/primary-btn" as *;
+
+/* ELEMENTS GLOBAUX */
+body {
+    @extend %container;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+ul[id$=__list] {
+    list-style: none;
+    max-width: 55ch;
+    
+    li {
+        margin-bottom: .5rem;
+
+        p {
+            padding-left: 1rem;
+        }
+    }
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+.time, .obj {
+    color: black;
+    font-weight: 500;
+}
+
+.flex-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: .8rem;
+
+    & > li {
+        padding: 2px 4px;
+        border: 1px solid var(--dark-sienna);
+        border-radius: 4px;
+    }
+}
+/*FIN ELEMENTS GLOBAUX*/
+
+main {
+    position: relative; /* Pour les coordonnées en device mobile */
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #33333350;
+
+    h1, h2 {
+        margin-bottom: 1rem;
+    }
+
+}
+
+#toggle-coordonne {
+   position: absolute;
+   top: 13px; right: 0;
+   font-family: inherit;
+   text-decoration: underline;
+   background: none;
+   border: 0;
+   cursor: pointer;
+}
+
+#coordonne {
+    position: absolute;
+    top: 35px;
+    opacity: 0;
+    right: 0;
+    background-color: var(--light-orange);
+    border: 1px solid var(--dark-sienna);
+    padding: 1rem;
+    transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: translate(80%, 0);
+
+    &.is-open {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+#coordonne__list {
+    width: 35ch;
+}
+
+.coordonne__list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coordonne__content {
+    flex-basis: 75%;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "main       main"
+            "competence experience"
+            "competence formation"
+            "langages   communication"
+        ;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    #competence {
+        grid-area: competence;
+    }
+
+    #experience {
+        grid-area: experience;
+    }
+
+    #formation {
+        grid-area: formation;
+    }
+
+    #langages {
+        grid-area: langages;
+    }
+
+    #communication {
+        grid-area: communication;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    #toggle-coordonne {
+        display: none;
+    }
+
+    #coordonne {
+        display: grid;
+        place-items: center;
+        padding: 0;
+        padding-top: 1rem;
+        top: 0;
+        position: relative;
+        opacity: 1;
+        transform: translate(0, 0);
+        border: 0;
+    }
+
+}

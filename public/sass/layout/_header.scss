@@ -1,0 +1,112 @@
+@use "../abstract/extend" as *;
+
+#header {
+    @extend %container;
+    font-family: "Roboto Slab";
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+
+    h2 {
+        position: relative;
+    }
+
+    .toggle {
+        margin-left: auto;
+        background-color: transparent;
+        border: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+}
+
+.header__navbar {
+    position: absolute;
+    width: 200px;
+    background-color: var(--blue-yonder);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .3s ease;
+    bottom: 0; right: 24px;
+    z-index: 2;
+    transform: translate(0, -110%);
+    box-shadow: 0px 20px 17px -25px white;
+
+    &.is-open {
+        transform: translate(0, 110%);
+    }
+}
+
+.navbar__list {
+    height: 100%;
+}
+
+.navbar__list-item {
+    height: 50px;
+    display: grid;
+    place-items: center;
+
+    .header__link {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        transition: .1s ease;
+        font-weight: 400;
+
+        &:hover::after,
+        &:focus::after {
+            transform: scaleX(1);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 5%;
+            background-color: var(--neutre-color);
+            transform: scaleX(0);
+            transition: .4s ease;
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    header {
+        .toggle {
+            display: none;
+        }
+    }
+
+    .header__navbar {
+        position: static;
+        transform: translate(0, 0);
+        background: none;
+        height: auto;
+        width: auto;
+        box-shadow: none;
+        overflow: visible;
+        bottom: auto;
+        right: auto;
+        margin-left: auto; // Important
+
+        &::after {
+            content: none;
+        }    
+    }
+
+    .navbar__list {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navbar__list-item {
+        height: auto;
+    
+        .header__link {
+            // color: var(--primary-color);
+            font-size: 16px;
+        }
+    }
+
+}
