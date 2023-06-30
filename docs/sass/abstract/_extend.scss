@@ -1,18 +1,18 @@
 %container {
-    padding-left: calc(50% - calc(100% - 48px) / 2);
-    padding-right: calc(50% - calc(100% - 48px) / 2);
+  padding-left: calc(50% - calc(100% - 48px) / 2);
+  padding-right: calc(50% - calc(100% - 48px) / 2);
 }
 
 @media screen and (min-width: 750px) {
-    %container {
-        padding-left: calc(50% - calc(100% - 120px) / 2);
-        padding-right: calc(50% - calc(100% - 120px) / 2);
-    }
+  %container {
+    padding-left: calc(50% - calc(100% - 120px) / 2);
+    padding-right: calc(50% - calc(100% - 120px) / 2);
+  }
 }
 
 @media screen and (min-width: 1320px) {
-    %container {
-        padding-left: calc(50% - 1320px / 2);
-        padding-right: calc(50% -  1320px / 2);
-    }
+  %container {
+    padding-left: calc(50% - 1320px / 2);
+    padding-right: calc(50% - 1320px / 2);
+  }
 }
