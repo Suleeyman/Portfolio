@@ -1,18 +1,2 @@
-# Table of contents
-
-- [Overview](#overview)
-- [Screenshot](#screenshot)
-- [Link](#link)
-
-# Overview
-
-This repository is my online personnel portfolio.
-
-# Screenshot
-
-![Mon portfolio](screenshot.png)
-
-# Link
-
-- Live Site URL: [Github Page](https://suleeyman.github.io/Portfolio/)
-- My profil: [LinkedIN](https://www.linkedin.com/in/yavuz-ozturk-7a532622b/)
+**NEW** Personnal website : [ysozturk.com](https://ysozturk.com)
+LinkedIN Profil : [Yavuz OZTURK](https://www.linkedin.com/in/yavuz-ozturk-7a532622b/)
